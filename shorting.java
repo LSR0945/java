@@ -1,30 +1,29 @@
-import java.util.*;
-public class shorting {
-    public static void main(String[] args) {
-        // int arr[] = {5, 2, 8, 1, 3};
-        Scanner sc = new Scanner(System.in);
+import java.util.Scanner;
+
+class shorting{
+    public static void main(String a[]){
+        Scanner input = new Scanner(System.in);
         System.out.println("Enter the size of array");
-        int num= sc.nextInt();
-        int arr[] = new int[num];
-        for(int i=0;i<num;i++){
-            System.out.println("Enter the "+(i+1)+" element");
-            arr[i] = sc.nextInt();
+        int size = input.nextInt();
+        int arr[];
+        arr = new int [size];
+        for(int i =0;i<size;i++){
+            System.out.println("Enter the "+(i+1)+"elemet os aarray");
+            arr[i]=input.nextInt();
         }
-        int n = arr.length;
-        int v = n-1;
-       for(int i=0;i<v;i++){
-            for(int j=0;j<v-i;j++){
+        for(int i = 0 ;i<arr.length-1 ; i++){
+            for(int j = 0 ; j <arr.length-1-i ; j++){
                 if(arr[j]>arr[j+1]){
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+                    int tem = arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1] = tem;
                 }
+               
             }
         }
-        System.out.println("ASENDING");
-        for(int i=0;i<n;i++){
-            System.out.print(arr[i]+" ");
+        System.out.println("shorted array");
+        for(int i =0 ;i<arr.length; i++){
+            System.out.print(arr[i] + " ");
         }
     }
-    
 }
