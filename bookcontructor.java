@@ -2,17 +2,17 @@
  * Contructor
  */
 import java.util.Scanner;
-public class book {
+public class bookcontructor {
         String title ;
         String author ;
         double price ;
 
-    public book() {
+    public bookcontructor() {
         this.title = "";
         this.author = "";
         this.price = 0.0;
     }
-    public book(String title,String author,double price) {
+    public bookcontructor(String title,String author,double price) {
         this.title = title;
         this.author = author;
         this.price = price;
@@ -38,8 +38,8 @@ public class book {
         obj.display();
         obj1.display();
 */
-        book obj = new book();
-        book obj1 = new book("don","satish",100.0);
+        bookcontructor obj = new bookcontructor();
+        bookcontructor obj1 = new bookcontructor("don","satish",100.0);
         obj.display();
         obj1.display();
     }
