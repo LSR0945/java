@@ -70,7 +70,8 @@ class BankApp{
         System.out.println("Enter balance: ");
         float balance = sc.nextFloat();
 
-        BankAccount obj2= new BankAccount(name, accNum, balance);
+        // Fixed the constructor call to use the actual class name in this file.
+        BankApp obj2 = new BankApp(name, accNum, balance);
 
 
  

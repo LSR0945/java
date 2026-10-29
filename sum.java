@@ -1,11 +1,11 @@
 import java.util.Scanner;
 class sum{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
         int arr[] = new int[n];
         for(int i=0;i<n;i++){
-            arr[i] = sc.nextInt();
+            arr[i] = input.nextInt();
         }
         int odd =0;
         int even = 0;
@@ -20,5 +20,8 @@ class sum{
        
     }
      System.out.println("Sum of even numbers: " + even);
-        System.out.println("Sum of odd numbers: " + odd);
-    }}
+     System.out.println("Sum of odd numbers: " + odd);
+     input.close();    
+    }
+   
+}

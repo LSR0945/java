@@ -36,6 +36,6 @@ public class carcontructor {
 
         obj2.display();
         obj3.display();
-
+        sc.close();
     }
 }

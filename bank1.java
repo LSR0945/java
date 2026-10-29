@@ -13,10 +13,6 @@ class bank1{
 
     }
 
-    String[] custName = new String[3];
-    accNum = new int[3];
-    balance = new float[3];
-
     void inputData(){
           for(int i =01;i<=3;i++)
           {
@@ -41,7 +37,8 @@ class bank1{
     }
     float checkBalance( float balance)
     {
-        
+        // Return the current balance to fix the missing return statement.
+        return balance;
     }
 
     void displayDetails(float balance)
@@ -65,7 +62,8 @@ class bank1{
         System.out.println("Enter balance: ");
         float balance = sc.nextFloat();
 
-        BankAccount obj2= new BankAccount(name, accNum, balance);
+        // Fixed class name mismatch with the actual class declaration.
+        bank1 obj2= new bank1(name, accNum, balance);
 
 
  
