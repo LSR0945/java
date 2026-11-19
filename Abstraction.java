@@ -1,5 +1,9 @@
 abstract class Abstract {
     abstract void circle();
+    
+    void sound(){
+        System.out.println("hello ");
+    }
 
 }
 
@@ -17,6 +21,7 @@ public class Abstraction{
         square s = new square();
         s.circle();
         s.square();
-        
+        s.sound();
+
     }
 }
